@@ -604,6 +604,10 @@ code {
   color: #349dcf;
 }
 
+.screen20{
+  display:none;
+}
+
 /* === sidebar styling ===*/
 
 .side1 {
@@ -3286,6 +3290,20 @@ width:80%;
   }
   .connect15{
     height:100%;
+  }
+
+  /* screen2 styling*/
+  .screen20{
+    display:block;
+  }
+  .screen2{
+    display:none;
+  }
+  .screen4{
+    flex-direction:column;
+  }
+  .screen6{
+    grid-template-columns: auto;
   }
 
 }

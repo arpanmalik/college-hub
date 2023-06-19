@@ -1,16 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import img from "../Images/c27.png";
 import img2 from "../Images/c28.png";
 import img3 from "../Images/c24.png";
 
 const Screen2 = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <Navbar />
       <div className="screen1">
+        <div className="screen20">
+          <i class="fa-solid fa-bars" onClick={handleShow}></i>
+        </div>
         <div className="screen2">
           <Sidebar />
         </div>
@@ -343,6 +352,14 @@ const Screen2 = () => {
         </div>
       </div>
       <Footer />
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <Sidebar />
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   );
 };
