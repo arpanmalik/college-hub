@@ -28,7 +28,7 @@ const Navbar2 = ()=>{
                         <p>Test</p>
                     </div>
                     <div className="connect5 cnt">
-                        <p>Get Cuunselling</p>
+                        <p>Get Counselling</p>
                     </div>
                 </div>
                 <div className="connect6">

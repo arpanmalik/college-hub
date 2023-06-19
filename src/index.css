@@ -3266,4 +3266,26 @@ width:80%;
     display:none;
   }
 
+  /* === council connect styling ===*/
+  .connect2{
+    display:none;
+  }
+  .connect7{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+  }
+  .connect8{
+    width:100%;
+  }
+  .connect9{
+    width:100%;
+  }
+  .connect14{
+    grid-template-columns: auto auto auto;
+  }
+  .connect15{
+    height:100%;
+  }
+
 }
